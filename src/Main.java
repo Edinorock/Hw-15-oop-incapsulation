@@ -3,36 +3,19 @@ public class Main {
 
 
         human human = new human("Максим", 1987, "Минск", "бренд-менеджером");
-        // следующие строки от предыдущего задания, решила не удалять, программа все равно работает
-        human.name = "Максим";
-        human.town = "Минск";
-        human.yearOfBirth = 1987;
-        human.job = "бренд-менеджером";
-        human.humanSay();
-
-
         human human1 = new human("Аня", 1993, "Москва", "методистом образовательных программ");
-        // следующие строки от предыдущего задания, решила не удалять, программа все равно работает
-        human1.name = "Аня";
-        human1.yearOfBirth = 1993;
-        human1.town = "Москва";
-        human1.job = "методистом образовательных программ";
-        human1.humanSay();
-
         human human2 = new human("Катя", 1994, "Калининград", "продакт-менеджером");
-        // следующие строки от предыдущего задания, решила не удалять, программа все равно работает
-        human2.name = "Катя";
-        human2.yearOfBirth = 1994;
-        human2.town = "Калининград";
-        human2.job = "продакт-менеджером";
-        human2.humanSay();
-
         human human3 = new human("Артем", 1995, "Москва", "директором по развитию бизнеса");
-        // следующие строки от предыдущего задания, решила не удалять, программа все равно работает
-        human3.name = "Артем";
-        human3.yearOfBirth = 1995;
-        human3.town = "Москва";
-        human3.job = "директором по развитию бизнеса";
-        human3.humanSay();
+        human human4 = new human("Владимир", 2001, "Казань", null);
+
+        printInfo(human);
+        printInfo(human1);
+        printInfo(human2);
+        printInfo(human3);
+        printInfo(human4);
+    }
+
+    private static void printInfo(human human){
+        System.out.println("Привет! Меня зовут " + human.name + ". Я из города " + human.getTown() + ". Я родился в " + human.getYearOfBirth() + " году. Я работаю на должности " + human.job + ". Будем знакомы!");
     }
 }
